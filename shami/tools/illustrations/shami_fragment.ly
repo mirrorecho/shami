@@ -1,4 +1,4 @@
-% 2017-12-30 23:37
+% 2018-01-10 00:10
 
 \version "2.19.54"
 \language "english"
@@ -10,10 +10,31 @@
 \paper {}
 
 \score {
-    \new Score <<
-        \context Staff = "Line1" \with {
-            \consists Horizontal_bracket_engraver
-        } {
+    {
+        \override Staff.StaffSymbol.line-positions = #'( 3 0 -3 )
+        \override Staff.TimeSignature.break-visibility = #all-invisible
+        {
+            {
+                \time 4/4
+                c'2
+                c'2
+            }
+            {
+                c'2
+                c'2
+            }
+            {
+                c'2
+                c'2
+            }
+            {
+                c'2
+                c'2
+            }
+            {
+                c'2
+                c'2
+            }
         }
-    >>
+    }
 }

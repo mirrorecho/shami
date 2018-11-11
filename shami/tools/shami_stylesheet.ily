@@ -1,4 +1,4 @@
-#(set-global-staff-size 88)
+#(set-global-staff-size 22)
 
 txtNoteHead = #(define-music-function
      (parser location txt)

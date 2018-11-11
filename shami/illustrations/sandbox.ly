@@ -1,4 +1,4 @@
-% 2017-12-31 00:28
+% 2018-01-18 22:03
 
 \version "2.19.54"
 \language "english"
@@ -19,10 +19,29 @@
             {
                 \override Staff.StaffSymbol.line-positions = #'( 3 0 -3 )
                 \override Staff.TimeSignature.break-visibility = #all-invisible
-                \txtNoteHead "6"
-                c'4
-                b'4
-                a'4
+                {
+                    {
+                        \time 4/4
+                        \txtNoteHead "0"
+                        b'2
+                        c'2
+                    }
+                    {
+                        \txtNoteHead "0"
+                        b'2
+                        c'2
+                    }
+                    {
+                        \txtNoteHead "0"
+                        b'2
+                        c'2
+                    }
+                    {
+                        \txtNoteHead "0"
+                        b'2
+                        c'2
+                    }
+                }
             }
         }
     >>
